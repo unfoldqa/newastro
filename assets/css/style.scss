@@ -1,0 +1,295 @@
+$bg_color: #F6F6F6;
+$font_color: #504949;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: Cormorant;
+    src: url(../fonts/Cormorant-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Cormorant;
+    src: url(../fonts/Cormorant-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Cormorant;
+    src: url(../fonts/Cormorant-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Cormorant;
+    src: url(../fonts/Cormorant-SemiBold.ttf);
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: #504949;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+
+
+.li{
+    &__modific{
+        text-decoration: line-through;
+    }
+}
+
+
+body{
+    font-family: Cormorant;
+    color: $font_color;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+
+    @media(max-width: 376px)
+    {max-width: unset;
+    padding: 0 37px;}
+}
+
+.header{
+    padding: 20px 0;
+    background-color: $bg_color;
+
+    @media(min-width: 376px){
+        padding: 50px 0;
+    }
+    &__nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__burg{
+        display: none;
+
+    @media(max-width: 376px){
+        display: block;
+    }
+    }
+    &__text{
+        display: flex;
+        gap: 39px;
+        @media(max-width: 376px){
+            display: none;
+        }
+    }
+
+    &__link{
+        
+        font-weight: 400;
+        // hover обозначает что при наведении курсора на текст, шрифт ставил значения на 700
+        &:hover{
+            font-weight: 700; 
+        }
+    }
+
+}
+
+.landing{
+    background-color: $bg_color;
+    padding: 77px 0 122px 0;
+    @media(max-width: 376px){
+        padding: 10px 0;
+    }
+    
+    &__subtitle{
+        width: 228px;
+        height: 22px;
+        top: 265px;
+        left: 239px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    &__title{
+        width: 710px;
+        height: 97px;
+        top: 279px;
+        left: 132px;
+        gap: 0px;
+        opacity: 0px;
+        font-weight: 600;
+        font-size: 80px;
+    }
+    &__text{
+        width: 553px;
+        height: 108px;
+        top: 381px;
+        left: 140px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__textt{
+        width: 566px;
+        height: 54px;
+        top: 509px;
+        left: 140px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+
+
+    }
+
+    &__num{
+        width: 21px;
+height: 61px;
+top: 570px;
+left: 140px;
+gap: 0px;
+opacity: 0px;
+font-size: 50px;
+font-weight: 400;
+line-height: 60.55px;
+text-align: left;
+    }
+
+    &__ttxt{
+        width: 124px;
+height: 22px;
+top: 630px;
+left: 223px;
+gap: 0px;
+opacity: 0px;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.8px;
+text-align: left;
+    }
+
+    &__information{
+        display: flex;
+        margin-bottom: 38px;
+    }
+    
+    &__course{
+        width: 517px;
+height: 88px;
+top: 690px;
+left: 141px;
+gap: 0px;
+opacity: 0px;
+font-size: 40px;
+font-weight: 700;
+line-height: 44px;
+text-align: left;
+
+    }
+
+    &__svva{
+        max-width: 419px;
+        margin-bottom: 10px;
+        &_first{
+            display: flex;
+            gap: 23px;
+            align-items: flex-end;
+            &::before{
+                content: "1";
+                font-size: 50px;
+                line-height: 1;}
+            }
+      }
+      &__ph{
+        margin-right: 300px;
+      }
+
+     }
+
+
+     .programma{
+        &__text{
+            background-color: #B59797;
+            padding-top: 125px;
+            padding-bottom: 160px;
+        }
+     }
+
+     .tarif{
+        &__title{
+            width: 285px;
+height: 97px;
+top: 1840px;
+left: 133px;
+gap: 0px;
+opacity: 0px;
+font-size: 40px;
+font-weight: 600;
+line-height: 96.88px;
+text-align: left;
+
+        }
+
+        &__card_title{
+            width: 117px;
+height: 30px;
+top: 2003px;
+left: 172px;
+gap: 0px;
+opacity: 0px;
+font-family: Cormorant;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+text-align: left;
+background-color: #B59797;
+
+        }
+
+
+
+     }
+
+     .footer{
+        background-color: #3C2A2A;
+
+        &__information{
+            display: flex;
+        justify-content: space-between;
+        color: #FBF6F6;
+        padding-top: 100px;
+        padding-bottom: 140px;
+        }
+
+        &__name{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        &__piar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__policy{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 20px;
+        }
+
+        a{
+            color: #FBF6F6;
+            text-decoration: underline;
+        }
+     }
